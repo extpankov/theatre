@@ -1,33 +1,57 @@
+/* open-sans-condensed-300 - latin_cyrillic */
 @font-face {
     font-family: 'Open Sans Condensed';
-    src: url(./fonts/Open_Sans_Condensed/OpenSansCondensed-Light.ttf),
-    url(./fonts/Open_Sans_Condensed/OpenSansCondensed-Bold.ttf),
-    url(./fonts/Open_Sans_Condensed/OpenSansCondensed-LightItalic.ttf);
+    font-style: normal;
+    font-weight: 300;
+    src: url('./fonts/open-sans-condensed-v15-latin_cyrillic-300.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('./fonts/open-sans-condensed-v15-latin_cyrillic-300.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('./fonts/open-sans-condensed-v15-latin_cyrillic-300.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('./fonts/open-sans-condensed-v15-latin_cyrillic-300.woff') format('woff'),
+        /* Modern Browsers */
+        url('./fonts/open-sans-condensed-v15-latin_cyrillic-300.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('./fonts/open-sans-condensed-v15-latin_cyrillic-300.svg#OpenSansCondensed') format('svg');
+    /* Legacy iOS */
 }
+
+/* open-sans-condensed-700 - latin_cyrillic */
 @font-face {
-    font-family: 'Open Sans';
-    src: url(./fonts/Open_Sans/OpenSans-Bold.ttf),
-    url(./fonts/Open_Sans/OpenSans-BoldItalic.ttf),
-    url(./fonts/Open_Sans/OpenSans-ExtraBold.ttf),
-    url(./fonts/Open_Sans/OpenSans-ExtraBoldItalic.ttf),
-    url(./fonts/Open_Sans/OpenSans-Italic.ttf),
-    url(./fonts/Open_Sans/OpenSans-Light.ttf),
-    url(./fonts/Open_Sans/OpenSans-LightItalic.ttf),
-    url(./fonts/Open_Sans/OpenSans-Regular.ttf),
-    url(./fonts/Open_Sans/OpenSans-SemiBold.ttf),
-    url(./fonts/Open_Sans/OpenSans-SemiBoldItalic.ttf);
+    font-family: 'Open Sans Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/open-sans-condensed-v15-latin_cyrillic-700.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('./fonts/open-sans-condensed-v15-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('./fonts/open-sans-condensed-v15-latin_cyrillic-700.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('./fonts/open-sans-condensed-v15-latin_cyrillic-700.woff') format('woff'),
+        /* Modern Browsers */
+        url('./fonts/open-sans-condensed-v15-latin_cyrillic-700.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('./fonts/open-sans-condensed-v15-latin_cyrillic-700.svg#OpenSansCondensed') format('svg');
+    /* Legacy iOS */
 }
 
 $gold: #D1A954;
 $black: #333333;
 
-html, body {
+html,
+body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    color: white;
+    font-family: 'Open Sans Condensed', 'Times New Roman';
 }
 
 .wrapper {
+    margin: 0 auto;
     max-width: 1110px;
 }
 
@@ -40,11 +64,8 @@ html, body {
 }
 
 .header__topbar {
-    margin: 0 auto;
     padding-top: 50px;
-    font-family: 'Open Sans Condensed', monospace;
     font-size: 18px;
-    font-weight: bold;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     text-decoration: none;
@@ -55,7 +76,7 @@ html, body {
 
 .header__nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     min-width: 80%;
 }
 
@@ -72,7 +93,6 @@ html, body {
     height: 100%;
     font-size: 36px;
     background-color: rgba(51, 51, 51, 0.75);
-    font-family: 'Open Sans Condensed', monospace;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: bold;
@@ -110,4 +130,22 @@ html, body {
 
 .lc__a:hover {
     color: $gold;
+}
+
+.header__main-section {
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.ms__container {
+    align-self: center;
+}
+
+.ms__name {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 87px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }

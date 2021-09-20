@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url(./fonts/Open_Sans_Condensed/OpenSansCondensed-Light.ttf),
+    url(./fonts/Open_Sans_Condensed/OpenSansCondensed-Bold.ttf),
+    url(./fonts/Open_Sans_Condensed/OpenSansCondensed-LightItalic.ttf);
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(./fonts/Open_Sans/OpenSans-Bold.ttf),
+    url(./fonts/Open_Sans/OpenSans-BoldItalic.ttf),
+    url(./fonts/Open_Sans/OpenSans-ExtraBold.ttf),
+    url(./fonts/Open_Sans/OpenSans-ExtraBoldItalic.ttf),
+    url(./fonts/Open_Sans/OpenSans-Italic.ttf),
+    url(./fonts/Open_Sans/OpenSans-Light.ttf),
+    url(./fonts/Open_Sans/OpenSans-LightItalic.ttf),
+    url(./fonts/Open_Sans/OpenSans-Regular.ttf),
+    url(./fonts/Open_Sans/OpenSans-SemiBold.ttf),
+    url(./fonts/Open_Sans/OpenSans-SemiBoldItalic.ttf);
+}
+
+$gold: #D1A954;
+$black: #333333;
+
+html, body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 1110px;
+}
+
+.header {
+    background-image: url(./img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    height: 1080px;
+}
+
+.header__topbar {
+    margin: 0 auto;
+    padding-top: 50px;
+    font-family: 'Open Sans Condensed', monospace;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-around;
+    min-width: 80%;
+}
+
+.header__tph-a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid #D1A954;
+}
+
+.header__left-column {
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    font-size: 36px;
+    background-color: rgba(51, 51, 51, 0.75);
+    font-family: 'Open Sans Condensed', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    color: #c4c4c4;
+    display: grid;
+    grid-template-columns: 150px;
+    grid-template-rows: 400px 350px 100px;
+}
+
+.lc__text {
+    white-space: nowrap;
+    font-size: 18px;
+    height: 18px;
+    transform: rotate(-90deg);
+    align-self: center;
+    cursor: pointer;
+}
+
+.lc__line {
+    border: 3px solid #C4C4C4;
+    transform: rotate(90deg);
+    height: 0;
+}
+
+.lc__sn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lc__a {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 15px;
+}
+
+.lc__a:hover {
+    color: $gold;
+}

@@ -140,6 +140,14 @@ body {
     min-width: 80%;
 }
 
+.nav__li {
+    cursor: pointer;
+}
+
+.nav__li:hover {
+    color: $gold;
+}
+
 .header__tph-a {
     color: white;
     text-decoration: none;
@@ -175,8 +183,12 @@ body {
     cursor: pointer;
 }
 
+.lc__text:hover {
+    color: $gold;
+}
+
 .lc__line {
-    border: 3px solid #C4C4C4;
+    border: 4px solid #C4C4C4;
     transform: rotate(90deg);
     height: 0;
     justify-self: center;
@@ -243,4 +255,5 @@ body {
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 0.1em;
+    cursor: pointer;
 }

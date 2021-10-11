@@ -263,6 +263,62 @@ body {
 }
 
 .main {
-    position: relative;
-    color: orange;
+    background-color: $black;
+}
+
+.at {
+    padding-top: 150px;
+}
+
+.at__title {
+    font-family: "Open Sans Condensed";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+
+.at__goldText {
+    color: $gold;
+}
+
+.at__container {
+    display: grid;
+    grid-template-columns: 445px 255px 350px;
+    gap: 30px;
+}
+
+.at__container-title {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.at__container-description {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.an__case {
+    margin-bottom: 30px;
+}
+
+.an__case-desc {
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    margin-top: 15px;
 }

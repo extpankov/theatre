@@ -267,10 +267,10 @@ body {
 }
 
 .at {
-    padding-top: 150px;
+    padding: 150px 0;
 }
 
-.at__title {
+.main__title {
     font-family: "Open Sans Condensed";
     font-style: normal;
     font-weight: 300;
@@ -282,7 +282,7 @@ body {
     margin-bottom: 100px;
 }
 
-.at__goldText {
+.goldText {
     color: $gold;
 }
 
@@ -321,4 +321,69 @@ body {
     line-height: 22px;
     letter-spacing: 0.05em;
     margin-top: 15px;
+}
+
+.bt {
+    padding-bottom: 150px;
+}
+
+.pt {
+    padding-bottom: 150px;
+}
+
+.pt__content {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 200px);
+    gap: 80px;
+}
+
+.contacts__li, .contacts__a {
+    text-decoration: none;
+    color: white !important;
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.form {
+    display: grid;
+    grid-template-areas: 
+    "name" "comp" "msg"
+    "tel" "email" "msg"
+    "desc" "desc" "btn";
+}
+
+.form__name {
+    grid-area: name;
+}
+
+.form__tel {
+    gap: 10px;
+    grid-area: tel;
+}
+
+.form__company {
+    grid-area: comp;
+}
+
+.form__email {
+    grid-area: email;
+}
+
+.form__message {
+    grid-area: msg;
+}
+
+.form__desc {
+    grid-area: desc;
+}
+
+.form__btn {
+    grid-area: btn;
 }

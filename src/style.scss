@@ -338,9 +338,18 @@ body {
     gap: 80px;
 }
 
-.contacts__li, .contacts__a {
+.cnt__container {
+    display: flex;
+}
+
+.contacts {
+    margin-right: 152px;
+}
+
+.contacts__li,
+.contacts__a {
     text-decoration: none;
-    color: white !important;
+    color: white;
     font-family: Open Sans Condensed;
     font-style: normal;
     font-weight: bold;
@@ -351,39 +360,122 @@ body {
     margin-bottom: 25px;
 }
 
+.cnt__collectingContacts {
+    margin-bottom: 80px;
+}
+
 .form {
     display: grid;
-    grid-template-areas: 
-    "name" "comp" "msg"
-    "tel" "email" "msg"
-    "desc" "desc" "btn";
+    grid-template-areas:
+        "name comp msg"
+        "tel email msg"
+        "desc desc btn";
+}
+
+.form__inp {
+    background: #444444;
+    border: 1px solid #616161;
+    box-sizing: border-box;
+    padding-left: 15px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+    color: white;
+    outline: none;
+    margin: 0 30px 30px 0;
+}
+
+.form__inp_s {
+    width: 180px;
+    height: 35px;
+}
+
+.form__inp_l {
+    width: 310px;
+    height: 100px;
+    resize: none;
+    margin: 0;
+    padding-top: 10px;
 }
 
 .form__name {
-    grid-area: name;
+    grid-area: name
 }
 
 .form__tel {
-    gap: 10px;
-    grid-area: tel;
+    grid-area: tel
 }
 
 .form__company {
-    grid-area: comp;
+    grid-area: comp
 }
 
 .form__email {
-    grid-area: email;
+    grid-area: email
 }
 
 .form__message {
-    grid-area: msg;
+    grid-area: msg
 }
 
 .form__desc {
     grid-area: desc;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    color: #989898;
+}
+
+.form__btn-container {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .form__btn {
     grid-area: btn;
+    background: $gold;
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 190px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: $black;
+}
+
+.footer__line {
+    border: 1px solid #565656;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    color: #989898;
+}
+
+.footer__a {
+    color: #989898;
+    text-decoration: none;
 }

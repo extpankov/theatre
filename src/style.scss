@@ -340,7 +340,6 @@ body {
 
 .cnt__container {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .contacts {
@@ -528,6 +527,9 @@ body {
 
     .cnt__collectingContacts {
         order: -1;
+    }
+    .cnt__container {
+        flex-wrap: wrap;
     }
     .contacts {
         margin: 0;

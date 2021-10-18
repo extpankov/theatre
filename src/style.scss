@@ -340,6 +340,7 @@ body {
 
 .cnt__container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .contacts {
@@ -358,6 +359,12 @@ body {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     margin-bottom: 25px;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+    display: none;
 }
 
 .cnt__collectingContacts {
@@ -453,6 +460,7 @@ body {
     width: 190px;
     height: 50px;
     cursor: pointer;
+    border: 0;
 }
 
 .footer {
@@ -478,4 +486,63 @@ body {
 .footer__a {
     color: #989898;
     text-decoration: none;
+}
+
+// media.style.css
+
+@media (max-width: 1470px) {
+    .header__topbar {
+        flex-wrap: wrap;
+    }
+    .header__nav {
+        width: 100%;
+    }
+    .header__tph {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .wrapper {
+        max-width: 690px;
+    }
+
+    .at__container {
+        grid-template-columns: 445px 255px;
+        justify-content: center;
+    }
+    .at__building-pic {
+        display: none;
+    }
+    .bt__pic {
+        width: 100%;
+    }
+    .bt.wrapper {
+        max-width: 100%;
+    }
+    .pt__content {
+        justify-content: flex-start;
+        overflow-x: hidden;
+    }
+
+    .cnt__collectingContacts {
+        order: -1;
+    }
+    .contacts {
+        margin: 0;
+        flex-basis: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .break {
+        display: block;
+    }
+    .form__inp_l {
+        width: 270px;
+    }
+    .contacts__email, .contacts__adress {
+        text-align: right;
+    }
 }

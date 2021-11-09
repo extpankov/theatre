@@ -191,9 +191,11 @@ body {
 }
 
 .lc__line {
-    border: 4px solid #C4C4C4;
+    // height: 0;
+    // border: 4px solid #C4C4C4;
+    height: 5px;
+    background-color: #c4c4c4;
     transform: rotate(90deg);
-    height: 0;
     justify-self: center;
     width: 100px;
 }

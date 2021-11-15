@@ -542,3 +542,13 @@ body {
         text-align: right;
     }
 }
+
+@media (max-width: 1000px) {
+    .header__nav, .aside {
+        display: none;
+    }
+    .header__tph {
+        margin: 0;
+        justify-content: flex-end;
+    }
+}

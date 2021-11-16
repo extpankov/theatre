@@ -621,6 +621,9 @@ body {
 }
 
 @media (max-width: 800px) {
+    .wrapper {
+        max-width: 95vw;
+    }
     .at__container {
         grid-template-columns: none;
     }
@@ -638,9 +641,31 @@ body {
     #an__case {
         margin-right: 60px;
     }
+    .form {
+        grid-template-areas:
+            "name comp"
+            "tel email"
+            "msg msg"
+            "btn btn"
+            "desc desc";
+    }
+    .form__inp {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .form__inp_s {
+        width: 230px;
+    }
+    .form__inp_l {
+        width: 100%;
+    }
+    .form__message {
+        margin: 0 auto;
+    }
 }
 
 @media (max-height: 750px) {
+    
     .header__nav, .aside {
         display: none;
     }

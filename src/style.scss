@@ -654,13 +654,28 @@ body {
         margin-bottom: 30px;
     }
     .form__inp_s {
-        width: 230px;
+        width: 95%;
+        min-width: 230px;
     }
     .form__inp_l {
         width: 100%;
     }
     .form__message {
         margin: 0 auto;
+    }
+    .form__company, .form__email {
+        margin-left: auto;
+    }
+    .form__btn {
+        margin-top: 40px;
+    }
+    .form__desc {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .form__btn-container {
+        grid-column: 1 / 5;
+        justify-content: center;
     }
 }
 

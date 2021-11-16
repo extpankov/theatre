@@ -230,6 +230,45 @@ body {
     background-color: $black;
 }
 
+.ddm__nav {
+    margin-top: 140px;
+    margin-left: 40px;
+}
+
+.ddm__li {
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.ddm__sn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 140px;
+    height: 126px;
+}
+
+.dsn__a {
+    font-size: 42px;
+    width: 26px;
+    height: 45px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.dsn__a:hover {
+    color: $gold;
+}
+
 .header__main-section {
     display: flex;
     justify-content: flex-start;

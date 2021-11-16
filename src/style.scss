@@ -351,6 +351,11 @@ body {
     margin-bottom: 40px;
 }
 
+.at__space {
+    flex-basis: 100%;
+    display: none;
+}
+
 .at__container-description {
     font-family: Open Sans;
     font-style: normal;
@@ -558,7 +563,7 @@ body {
     }
 
     .at__container {
-        grid-template-columns: 445px 255px;
+        grid-template-columns: 70% 30%;
         justify-content: center;
     }
     .at__building-pic {
@@ -612,6 +617,26 @@ body {
     }
     .header__tph {
         flex-basis: auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .at__container {
+        grid-template-columns: none;
+    }
+    .at__container-title, .at__container-description {
+        text-align: center;
+    }
+    .at__about-numbers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .at__space {
+        display: block;
+    }
+    #an__case {
+        margin-right: 60px;
     }
 }
 

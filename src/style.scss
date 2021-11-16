@@ -575,3 +575,19 @@ body {
         flex-basis: auto;
     }
 }
+
+@media (max-height: 750px) {
+    .header__nav, .aside {
+        display: none;
+    }
+    .header__tph {
+        margin: 0;
+        justify-content: flex-end;
+    }
+    .header__menu {
+        display: block;
+    }
+    .header__tph {
+        flex-basis: auto;
+    }
+}

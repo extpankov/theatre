@@ -270,6 +270,14 @@ body {
     color: $gold;
 }
 
+.dsn__child {
+    width: 26px;
+    height: 45px;
+}
+.dsn__space {
+    flex-basis: 100%;
+}
+
 .header__main-section {
     display: flex;
     justify-content: flex-start;

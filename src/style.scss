@@ -705,6 +705,13 @@ body {
     .contacts__li, .contacts__a {
         margin: 0 auto 25px auto;
     }
+    .an__case {
+        margin: 0 0 30px 0!important;
+    }
+    .an__case-icon {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 350px) {

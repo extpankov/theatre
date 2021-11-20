@@ -148,6 +148,7 @@ body {
     display: none;
     position: relative;
     z-index: 10;
+    cursor: pointer;
 }
 
 .nav__li {
@@ -245,6 +246,10 @@ body {
     text-transform: uppercase;
     margin-bottom: 35px;
     cursor: pointer;
+}
+
+.ddm__li:hover {
+    color: $gold;
 }
 
 .ddm__sn {

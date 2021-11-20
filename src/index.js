@@ -1,4 +1,4 @@
-import css from "../src/style.min.css"
+// import css from "../src/style.min.css"
 
 $('.header__menu').click(() => {
     if ($('.header__ddm').css('display') == 'block') {
